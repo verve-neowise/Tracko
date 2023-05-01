@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Tracko</string>
+    <string name="title_activity_maps">Tracko</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="your_email">Email</string>
+    <string name="your_password">Password</string>
+    <string name="your_name">First Name</string>
+    <string name="your_last_name">Last name</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="stop">Stop</string>
+    <string name="start">Start</string>
+    <string name="sessions">Previous Sessions</string>
+    <string name="rename">Rename</string>
+    <string name="cancel">Cancel</string>
+    <string name="back_to_sign_in">Back to Sign In</string>
+    <string name="goto_sign_up">Goto Sign Up</string>
+    <string name="session_name">Session name</string>
+    <string name="view_session">View Session</string>
+    <string name="google_maps_key" />
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:background="@color/white"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="#1. 10/02/2020 20:05"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark"
+            android:drawablePadding="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/distance_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1450,4m"
+                android:textColor="@color/blue_700"
+                android:drawablePadding="10dp"
+                android:textSize="14sp"
+                app:drawableStartCompat="@drawable/ic_runner_20dp" />
+            <TextView
+                android:id="@+id/time_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:text="01:20.05"
+                android:textSize="14sp"
+                android:textColor="@color/blue_700"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                app:drawableStartCompat="@drawable/ic_baseline_access_time_24" />
+
+            <TextView
+                android:id="@+id/speed_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:drawablePadding="10dp"
+                android:text="10k/m"
+                android:textColor="@color/blue_700"
+                app:drawableStartCompat="@drawable/ic_baseline_speed_24" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/view_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textAllCaps="false"
+                android:padding="0dp"
+                android:textSize="13sp"
+                android:letterSpacing="0"
+                android:text="View"/>
+
+            <Button
+                android:id="@+id/rename_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:padding="0dp"
+                android:letterSpacing="0"
+                android:textSize="13sp"
+                android:textAllCaps="false"
+                android:text="Rename"/>
+
+            <Button
+                android:id="@+id/delete_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:letterSpacing="0"
+                android:layout_marginStart="10dp"
+                android:textSize="13sp"
+                android:textAllCaps="false"
+                android:text="Delete"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

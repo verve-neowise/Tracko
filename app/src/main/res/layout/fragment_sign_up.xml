@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="30dp"
+    android:padding="30dp"
+    app:cardCornerRadius="10dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark"/>
+
+        <EditText
+            android:id="@+id/name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/your_name"
+            android:inputType="text"
+            style="@style/RoundedEditText"/>
+
+        <EditText
+            android:id="@+id/last_name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="@string/your_last_name"
+            android:inputType="text"
+            style="@style/RoundedEditText"/>
+
+        <EditText
+            android:id="@+id/email_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="@string/your_email"
+            style="@style/RoundedEditText"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/password_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="@string/your_password"
+            style="@style/RoundedEditText"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:id="@+id/confirm_password_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="@string/confirm_password"
+            style="@style/RoundedEditText"
+            android:inputType="textPassword"/>
+
+        <LinearLayout
+            android:id="@+id/buttons_layout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+            <Button
+                android:id="@+id/sign_up_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:letterSpacing="0"
+                android:text="@string/sign_up"
+                style="@style/Widget.MaterialComponents.Button.Icon"/>
+
+            <Button
+                android:id="@+id/back_to_sign_in_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:textAllCaps="false"
+                android:letterSpacing="0"
+                android:text="@string/back_to_sign_in"
+                android:backgroundTint="@color/gray"
+                style="@style/Widget.MaterialComponents.Button.Icon"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
